@@ -410,12 +410,39 @@ button:hover {
 	user-select: none;
 }
 
+@keyframes shadow {
+	0% {
+		box-shadow: -3px -3px 0px var(--white), 10px 10px 0px var(--lightblue);
+	}
+
+	20% {
+		box-shadow: -3px -3px 0px var(--white), 3px 3px 0px var(--lightblue);
+	}
+
+	40% {
+		box-shadow: -10px -10px 0px var(--lightblue), 3px 3px 0px var(--lightblue);
+	}
+
+	60% {
+		box-shadow: -3px -3px 0px var(--white), 10px 10px 0px var(--white);
+	}
+
+	80% {
+		box-shadow: -10px -10px 0px var(--lightblue), 3px 3px 0px var(--white);
+	}
+
+	100% {
+			box-shadow: -10px -10px 0px var(--lightblue), 3px 3px 0px var(--white);
+	}
+}
+
 .box:hover {
-	box-shadow: -3px -3px 0px var(--white), 3px 3px 0px var(--lightblue);
+	box-shadow: -5px -5px 0px var(--white), 5px 5px 0px var(--lightblue);
 	color: var(--lightblue);
 	background-color: var(--black);
 	border-radius: 10px 0px;
 	background-image: linear-gradient(45deg, var(--black) 50%, var(--orange) 20%);
+	animation: shadow 1.5s linear 0s infinite alternate-reverse both;
 }
 
 .box-img {
