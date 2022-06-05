@@ -407,10 +407,11 @@ button:hover {
 	color: var(--white);
 	border-radius: 10px;
 	font-weight: 500;
+	user-select: none;
 }
 
 .box:hover {
-	box-shadow: -10px -10px 0px var(--white), 10px 10px 0px var(--lightblue);
+	box-shadow: -3px -3px 0px var(--white), 3px 3px 0px var(--lightblue);
 	color: var(--lightblue);
 	background-color: var(--black);
 	border-radius: 10px 0px;
