@@ -513,3 +513,12 @@ button:hover {
 	line-height: 1.5;
 	font-size: 15px;
 }
+
+.feedback {
+	padding: 0px 8px;
+	background-image: url(./images/fact-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: white;
+}
