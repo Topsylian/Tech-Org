@@ -400,12 +400,12 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--black);
+	background-color: black;
 	padding: 15px 0px;
 	transition: .5s ease-in-out;
 	box-shadow: 0px 0px 1px #012034fc;
 	color: var(--white);
-	border-radius: 10px;
+	border-radius: 10px 0px;
 	font-weight: 500;
 	user-select: none;
 }
@@ -441,18 +441,22 @@ button:hover {
 	color: var(--lightblue);
 	background-color: var(--black);
 	border-radius: 10px 0px;
-	background-image: linear-gradient(45deg, var(--black) 50%, var(--orange) 20%);
+	background-image: linear-gradient(45deg, var(--black) 50%, var(--orange) 0%);
 	animation: shadow 1.5s linear 0s infinite alternate-reverse both;
 }
 
 .box-img {
-	width: 100px;
+	width: 70px;
 	margin-bottom: 20px;
 	padding: 10px;
+	box-shadow: -5px -5px 0px var(--white), 5px 5px 0px var(--lightblue);
+	color: var(--lightblue);
+	border-radius: 50%;
 }
 
 .box-img img {
 	width: 100%;
+	background-color: transparent;
 	border-radius: 50%;
 }
 
@@ -520,5 +524,38 @@ button:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-color: white;
+	color: var(--white);
+}
+
+.feedback-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	place-items: center;
+	gap: 25px;
+}
+
+.feedback-item {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.feedback-item h1 {
+	margin-bottom: 10px;
+	font-size: 2.5rem;
+}
+
+.feedback-item p {
+	color: var(--lightblue);
+}
+
+.feed-img {
+	width: 50px;
+	margin-bottom: 10px;
+}
+
+.feed-img img {
+	width: 100%;
 }
