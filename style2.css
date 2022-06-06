@@ -1,8 +1,8 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
 	outline: none;
 }
 
@@ -32,6 +32,7 @@
   --font1: Geo;
   /*--blue: #002b3b;*/
 	--blue: #00556d;
+	--body: #daecee;
   --lightblue: #49e2e4;
   --orange: #f7650b;
   --lightcyan: #d6f1ed;
@@ -47,8 +48,8 @@ body {
   width: 100%;
   font-family: var(--font2);
   overflow-x: hidden;
-  background-color: #000000;
-	color: var(--white);
+  background-color: var(--body);
+	color: var(--black);
 }
 
 a {
@@ -56,10 +57,14 @@ a {
   color: var(--black);
 }
 
+p {
+	color: var(--black);
+}
+
 .alert {
   padding: 15px;
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
   transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: space-between;
@@ -75,6 +80,7 @@ a {
 .alert p {
   text-align: center;
   font-size: 14px;
+	color: var(--white);
 }
 
 .alert-link:hover {
@@ -84,7 +90,7 @@ a {
 /* The close button */
 .closebtn {
   margin-left: 15px;
-  color: var(--black);
+  color: var(--white);
   font-weight: bold;
   font-size: 22px;
   line-height: 20px;
@@ -98,8 +104,8 @@ a {
 }
 
 .contact-login-container {
-  color: var(--white);
-  background-color: var(--orange);
+  color: #daecee;
+  background-color: #daecee;
   font-size: 14px;
 }
 
@@ -143,7 +149,7 @@ div.contact-login-container a {
 .email:hover,
 .login:hover,
 .sign-up:hover {
-  color: var(--lightcyan);
+  color: var(--black);
 }
 
 .material-symbols-rounded {
@@ -157,7 +163,7 @@ div.contact-login-container a {
 	position: sticky;
   margin-bottom: 50px;
 	top: 0;
-  background: #ffffffad;
+  background: #000000bb;
 	padding: 15px 0px;
 }
 
@@ -169,12 +175,12 @@ div.contact-login-container a {
 }
 
 .logo-box {
-  color: var(--black);
+  color: var(--white);
   width: 30%;
 }
 
 .logo {
-  color: var(--black);
+  color: #daecee;
 }
 
 .link-wrapper {
@@ -257,7 +263,7 @@ a.quote:hover {
 }
 
 .left-h1 {
-  color: var(--lightblue);
+  color: var(--black);
   margin-bottom: 20px;
 	font-size: small;
   text-transform: uppercase;
@@ -278,20 +284,20 @@ a.quote:hover {
 .home-btn button {
   padding: 15px 25px;
   border-radius: 5px 5px;
-  background-color: var(--orange);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   transition: 0.5s ease-in-out;
   margin-bottom: 20px;
 }
 
 .home-btn button:hover {
-	box-shadow: -5px -5px 0px var(--white), 5px 5px 0px var(--lightblue);
+	box-shadow: -5px -5px 0px var(--white), 5px 5px 0px var(--orange);
 	border-radius: 10px 0px;
 	padding: 15px 35px;
-	background-color: var(--black);
-	background-image: linear-gradient(45deg, var(--black) 50%, var(--orange) 20%);
+	color: var(--white);
+	background-image: linear-gradient(45deg, var(--black) 100%, var(--lightblue) 0%);
 }
-
+/**
 .box {
   width: 100px;
 }
@@ -306,13 +312,15 @@ a.quote:hover {
   background: var(--red);
 }
 
+**/
+
 .welcome {
   padding: 0px 0px;
 	margin-bottom: 50px;
 }
 
 .welcome-wrapper {
-  background-color: black;
+  background-color: #daecee;
 	padding: 25px 0px;
 }
 
@@ -334,11 +342,10 @@ a.quote:hover {
   margin-bottom: 20px;
   text-transform: uppercase;
 	font-family: var(--font3);
-	font-size: small;
 }
 
 .wel-p {
-	color: var(--white);
+	color: var(--black);
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
@@ -351,19 +358,19 @@ a.quote:hover {
 
 @keyframes identifier {
 	0% {
-		background: linear-gradient(90deg, var(--white) 50%, var(--orange));
+		background: linear-gradient(90deg, var(--black) 50%, var(--orange));
 	}
 
 	30% {
-		background: linear-gradient(90deg, var(--white) 50%, var(--orange));
+		background: linear-gradient(90deg, var(--black) 50%, var(--orange));
 	}
 
 	60% {
-		background: linear-gradient(270deg, var(--white) 50%, var(--lightblue));
+		background: linear-gradient(270deg, var(--black) 50%, var(--lightblue));
 	}
 
 	100% {
-		background: linear-gradient(270deg, var(--white) 50%, var(--lightblue));
+		background: linear-gradient(270deg, var(--black) 50%, var(--lightblue));
 	}
 }
 
@@ -402,11 +409,11 @@ a.quote:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: black;
+	background-color: var(--white);
 	padding: 15px 0px;
-	transition: .5s ease-in-out;
+	transition: .85s ease-in-out;
 	box-shadow: 0px 0px 1px #012034fc;
-	color: var(--white);
+	color: var(--black);
 	border-radius: 10px 0px;
 	font-weight: 500;
 	user-select: none;
@@ -414,11 +421,11 @@ a.quote:hover {
 
 @keyframes shadow {
 	0% {
-		box-shadow: -3px -3px 0px var(--white), 10px 10px 0px var(--lightblue);
+		box-shadow: -3px -3px 0px var(--black), 10px 10px 0px var(--lightblue);
 	}
 
 	20% {
-		box-shadow: -3px -3px 0px var(--white), 3px 3px 0px var(--lightblue);
+		box-shadow: -3px -3px 0px var(--black), 3px 3px 0px var(--lightblue);
 	}
 
 	40% {
@@ -426,24 +433,24 @@ a.quote:hover {
 	}
 
 	60% {
-		box-shadow: -3px -3px 0px var(--white), 10px 10px 0px var(--white);
+		box-shadow: -3px -3px 0px var(--black), 10px 10px 0px var(--black);
 	}
 
 	80% {
-		box-shadow: -10px -10px 0px var(--lightblue), 3px 3px 0px var(--white);
+		box-shadow: -10px -10px 0px var(--lightblue), 3px 3px 0px var(--black);
 	}
 
 	100% {
-			box-shadow: -10px -10px 0px var(--lightblue), 3px 3px 0px var(--white);
+			box-shadow: -10px -10px 0px var(--lightblue), 3px 3px 0px var(--black);
 	}
 }
 
 .box:hover {
 	box-shadow: -5px -5px 0px var(--white), 5px 5px 0px var(--lightblue);
-	color: var(--lightblue);
-	background-color: var(--black);
+	color: var(--black);
+	background-color: var(--white);
 	border-radius: 10px 0px;
-	background-image: linear-gradient(45deg, var(--black) 50%, var(--orange) 0%);
+	background-image: linear-gradient(45deg, var(--white) 50%, var(--orange) 0%);
 	animation: shadow 1.5s linear 0s infinite alternate-reverse both;
 }
 
@@ -520,9 +527,10 @@ a.quote:hover {
 	font-size: 15px;
 }
 
+
 .feedback {
 	padding: 0px 0px;
-	background-image: url(./images/2560px-World_map_blue_dots.svg.png);
+	background-image: url(./images/fact-bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -534,7 +542,7 @@ a.quote:hover {
 	grid-template-columns: auto auto;
 	place-items: center;
 	gap: 25px;
-	background-color: #000000bd;
+	background-color: transparent;
 }
 
 .feedback-item {
@@ -549,10 +557,11 @@ a.quote:hover {
 	margin-bottom: 10px;
 	font-size: 2.5rem;
 	font-family: var(--font3);
+	color: var(--black);
 }
 
 .feedback-item p {
-	color: var(--lightblue);
+	color: var(--blue);
 }
 
 .feed-img {
@@ -565,14 +574,14 @@ a.quote:hover {
 }
 
 .feedquote {
-	background-color: var(--black);
-	color: var(--blue);
+	background-color: transparent;
+	color: var(--white);
 	padding: 3%;
 }
 
 .feedquote-box {
 	padding: 30px 35px;
-	background-color: var(--white);
+	background-color: var(--black);
 	box-shadow: 5px 10px var(--lightblue);
 	transition: 0.85s ease-in-out;
 	border-radius: 5px 5px;
@@ -593,6 +602,7 @@ a.quote:hover {
 	text-align: center;
 	text-shadow: 1px 0px 1px black;
 	font-weight: 600;
+	color: var(--white);
 }
 
 .feedquote-btn {
@@ -620,23 +630,14 @@ a.quote:hover {
 	color: var(--white);
 }
 
-.fade-in-text {
-  animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 .dark-mode {
 	position: fixed;
 	top: 160px;
 	right: 2px;
 	padding: 5px;
 	border-radius: 50%;
-	background-color: var(--white);
-	color: var(--black);
+	background-color: var(--black);
+	color: var(--white);
 }
 
 .dark-mode button {
