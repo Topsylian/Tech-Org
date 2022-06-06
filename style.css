@@ -571,6 +571,20 @@ a.quote:hover {
 .feedquote-box {
 	padding: 30px 35px;
 	background-color: var(--white);
+	box-shadow: 5px 10px var(--lightblue);
+	transition: 0.85s ease-in-out;
+	border-radius: 5px 5px;
+}
+
+.feedquote-box:hover {
+	padding: 30px 35px;
+	background-color: var(--white);
+	box-shadow: -5px -10px var(--lightblue);
+	border-radius: 25px 0px;
+}
+
+.feedquote-p {
+	margin-bottom: 25px;
 }
 
 .feedquote-p p {
@@ -578,4 +592,24 @@ a.quote:hover {
 	text-align: center;
 	text-shadow: 1px 0px 1px black;
 	font-weight: 600;
+}
+
+.feedquote-btn {
+	margin-bottom: 15px;
+}
+
+.feedquote-btn button {
+	width: 100%;
+	padding: 15px 0px;
+	border-radius: 10px;
+}
+
+.blue button {
+	background-color: var(--lightblue);
+	color: var(--white);
+}
+
+.orange button{
+	background-color: var(--orange);
+	color: var(--white);
 }
