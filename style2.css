@@ -622,7 +622,7 @@ a.quote:hover {
 }
 
 .blue button:hover {
-	background-image: linear-gradient(var(--blue), var(--lightblue));
+	background-image: var(--orange);
 }
 
 .orange button{
@@ -642,4 +642,66 @@ a.quote:hover {
 
 .dark-mode button {
 	border-radius: 50%;
+}
+
+.why-us {
+	background-color: var(--grey);
+	margin-bottom: 50px;
+	padding: 0px 8px;
+}
+
+.why-us-container {
+	display: grid;
+	grid-template-columns: auto;
+	gap: 25px;
+	padding: 50px 0px 50px 0px;
+}
+
+.why-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.img-why {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.why-img-box {
+	width: 350px;
+}
+
+.why-img-box img {
+	width: 100%;
+	height: auto;
+}
+
+.why-info {
+	margin-bottom: 50px;
+}
+
+.why-icon {
+	width: 60px;
+	background-color:var(--white);
+	padding: 12px 5px 0px;
+	margin-bottom: 20px;
+	box-shadow: 3px 3px var(--lightblue), -3px -3px var(--orange);
+}
+
+.why-icon img {
+	width: 100%;
+	height: auto;
+}
+
+.why-h1 {
+	margin-bottom: 20px;
+}
+
+.why-p {
+	font-size: 14px;
+	line-height: 1.8;
+	color: var(--gray);
 }
