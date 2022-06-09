@@ -40,6 +40,7 @@
   --green: green;
   --black: black;
   --grey: #c6c4c417;
+	--gray: #959393;
   --shadow: 0 1px 0px #f0e43766, 1px 0 0px #000000dc, 1px 2px 1px #0000003e;
 }
 
@@ -515,7 +516,7 @@ a.quote:hover {
 }
 
 .purpose-p {
-	color: var(--white);
+	color: var(--gray);
 	line-height: 1.5;
 	font-size: 15px;
 }
@@ -527,6 +528,7 @@ a.quote:hover {
 	background-repeat: no-repeat;
 	background-size: contain;
 	color: var(--white);
+	margin-bottom: 50px;
 }
 
 .feedback-grid {
@@ -543,6 +545,11 @@ a.quote:hover {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 25px;
+}
+
+.wel-p {
+	font-size: 13px;
+	color: var(--white);
 }
 
 .feedback-item h1 {
@@ -609,24 +616,21 @@ a.quote:hover {
 .blue button {
 	background-color: var(--lightblue);
 	color: var(--white);
+	transition: 0.85s ease-in-out;
 }
 
 .blue button:hover {
-	background-image: linear-gradient(var(--blue), var(--lightblue));
+	background-color: var(--orange);
 }
 
 .orange button{
 	background-color: var(--orange);
 	color: var(--white);
+	transition: 0.85s ease-in-out;
 }
 
-.fade-in-text {
-  animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.orange button:hover {
+	background-color: var(--lightblue);
 }
 
 .dark-mode {
@@ -641,4 +645,66 @@ a.quote:hover {
 
 .dark-mode button {
 	border-radius: 50%;
+}
+
+.why-us {
+	background-color: var(--grey);
+	margin-bottom: 50px;
+	padding: 0px 8px;
+}
+
+.why-us-container {
+	display: grid;
+	grid-template-columns: auto;
+	gap: 25px;
+	padding: 50px 0px 50px 0px;
+}
+
+.why-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.img-why {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.why-img-box {
+	width: 350px;
+}
+
+.why-img-box img {
+	width: 100%;
+	height: auto;
+}
+
+.why-info {
+	margin-bottom: 50px;
+}
+
+.why-icon {
+	width: 60px;
+	background-color:var(--white);
+	padding: 12px 5px 0px;
+	margin-bottom: 20px;
+	box-shadow: 3px 3px var(--lightblue), -3px -3px var(--orange);
+}
+
+.why-icon img {
+	width: 100%;
+	height: auto;
+}
+
+.why-h1 {
+	margin-bottom: 20px;
+}
+
+.why-p {
+	font-size: 14px;
+	line-height: 1.8;
+	color: var(--gray);
 }
